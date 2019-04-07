@@ -1,0 +1,16 @@
+<div >
+  <h1>
+    Bienvenido al {{ title }}!
+  </h1>
+  <p>{{descripcion}}</p>
+
+  <nav>
+    <a [routerLink]="['/inicio']" >Inicio</a>
+    &nbsp;
+    <a [routerLink]="['/usuarios']" >Usuarios</a>
+    &nbsp;
+  </nav>
+  <hr>
+  <router-outlet></router-outlet>
+
+</div>

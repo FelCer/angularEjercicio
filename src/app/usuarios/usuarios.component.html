@@ -1,0 +1,16 @@
+<p>
+  usuarios works!
+</p>
+<input type='text' (ngModel)='userId' (keyup.enter)='cargarUser()' />
+<div class="contenedor" *ngIf='user'>
+  <div class="example-container">
+    <img src='{{user.avatar}}' width='200' />
+    <mat-form-field>
+      <input matInput placeholder="Input" value='{{user.first_name}}' disabled>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Input" value='{{user.last_name}}' disabled>
+    </mat-form-field>
+  </div>
+</div>
